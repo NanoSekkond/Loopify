@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,121,73,1) 80%, rgba(30,215,96,1) 100%);
+}
+
+.main_box {
+    /*outline: red 1px solid;*/
+    margin: 10vh auto;
+    max-width: 40vw;
+    min-height: 80vh;
+    height: 80%;
+    border-radius: 25px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_box .box_content {
+    margin: 10% 10% 0 10%;
+}
+
+.main_box .list * {
+    margin: 0;
+    /*outline: blue 1px solid;*/
+}
+
+.main_box .list {
+    /*outline: lightgreen 1px solid;*/
+}
+
+.main_box .list button {
+    outline: none;
+    border-radius: 28px;
+    color: #000000;
+    font-size: 20px;
+    background: #1ed760;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    width: 80%;
+    margin: 5px 10% 35px 10%;
+}
+
+.main_box .list button:enabled:hover {
+    cursor: pointer;
+}
+
+.main_box .list button:enabled:active {
+    background: #1a8c42;
+}
+
+.main_box .list button:disabled {
+    background: #0e4f25;
+}
+
+.main_box .list p {
+    margin-top: -25px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main_box .list a {
+    color: #1ed760;
+}
+
+.main_box .list a:hover {
+    cursor: pointer;
+}
+
+.main_box .list .input_label {
+    margin: 0 10%;
+}
+
+.main_box .list label {
+    font-size: 18px;
+}
+
+.main_box .list input {
+	font-size: 18px;
+	padding: 5px 10px;
+	width: 60%;
+	outline: none;
+	background: #242424;
+	color: #FFFFFF;
+	border: 0px solid #C4D1EB;
+	border-radius: 5px;
+	transition: .3s ease;
+}
+
+.main_box .list input:focus {
+	background: #242424;
+	border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width:1000px) {
+    .main_box {
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        border-radius: 0;
+        max-width: 1000px;
+        margin: 0;
+    }
+}

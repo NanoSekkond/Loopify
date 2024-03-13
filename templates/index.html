@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Loopify</title>
+{% endblock %}
+
+{% block body %}
+<div class="main_box">
+    <div class="box_content">
+        <div class="list">
+            <h1>1. Login:</h1>
+            <br>
+            <button onclick="login()" id="login_button">Login</button>
+            <br>
+            <div id="log_out_text"></div>
+        </div>
+        <div class="list">
+            <h1>2. Pick your loop:</h1>
+            <br>
+            <div class="input_label">
+                <label for="start-input">Start: <input type="number" name="start-input" id="start-input" min="0"> ms</label>
+            </div>
+            <br>
+            <div class="input_label">
+                <label for="end-input">End: <input type="number" name="end-input" id="end-input" min="0"> ms</label>
+            </div>
+            <br>
+            <button onclick="startLoop()" id="start_loop_button" oninput="validity.valid||(value='');">Start Loopify</button>
+            <br>
+            <button onclick="stopLoop()" id="stop_loop_button" oninput="validity.valid||(value='');" disabled="true">Stop Loopify</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
